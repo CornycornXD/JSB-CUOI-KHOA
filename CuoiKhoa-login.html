@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CuoiKhoa-login.css">
+    <script src="./CuoiKhoa-login.js" defer></script>
+    <script src="https://kit.fontawesome.com/5258df02df.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head> 
+<body>
+    <form id="formId">
+        <h2 id="title"> - Account registration - </h2>
+        <div class="close-area">
+            <div class="close-button"> 
+                <a href="./Cuoikhoa.html">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </a>
+        </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card-form">
+                    <div class="input">
+                        <input type="email" class="input-field" id="email" required>
+                        <label class="input-label">Email<i class="fi fi-rr-envelope"></i></label>
+                    </div>
+                    <div class="input">
+                        <input type="password" class="input-field" id="password" required>
+                        <label class="input-label">Password<i class="fi fi-rr-lock"></i></label>
+                    </div>
+                    <div class="input" id="remember">
+                        <input type="checkbox" name="remember-me" value="yes">Remember me
+                    </div>
+                    <div class="button">
+                        <button class="action-button">Log in</button>
+                    </div>
+                </div>
+                
+                <div class="card-info">
+                    <p><a href="#">Forgot password?</a></p>
+                    <p>Create a <a href="#">new account</a></p>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
