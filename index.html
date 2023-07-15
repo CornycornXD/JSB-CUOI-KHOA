@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CuoiKhoa.css">
+    <script src="./CuoiKhoa.js"></script>
+    <script src="https://kit.fontawesome.com/5258df02df.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <div class="main-container">
+              <!-- Begin header -->
+            <header class="header">
+                <div class="buttons" id="home"><a href=""><i class="fa-solid fa-house"></i>Home</a></div>
+                
+                <div class="buttons" id ="categories">
+                    <a class="dropdownmore" title="Categories" id="categories-button">
+                        Danh mục 
+                        <i class="fa-solid fa-chevron-down"></i>
+                        
+                    </a>    
+                    <div class="sub-menu2">
+                        <div class="category"><a href="" ><i class="fa-solid fa-shirt"></i>Thời trang nam</a></div>
+                        <div class="category"><a href="" ><i class="fa-solid fa-person-dress"></i>Thời trang nữ</a></div>
+                        <div class="category"><a href="" ><i class="fa-solid fa-laptop"></i>Thiết bị điện tử</a></div>
+                        <div class="category"><a href="" ><i class="fa-solid fa-blender"></i>Thiết bị gia dụng</a></div>
+                        <div class="category"><a href="" ><i class="fa-solid fa-ring"></i>Phụ kiện trang sức</a></div>
+                        <div class="category"><a href="" ><i class="fa-solid fa-basket-shopping"></i>Bách hóa</a></div>
+                    </div>
+                </div>
+                <div class=" buttons" id="more">
+                    <a class="dropdownmore" title="More" id="more-button">
+                        More 
+                        <i class="fa-solid fa-chevron-down"></i>  
+                    </a>    
+                    <div class="sub-menu">
+                        <div class="morebuttons"><a href="CuoiKhoa-login.html"><i class="fa-solid fa-right-to-bracket"></i>Đăng nhập</a></div>
+                        <div class="morebuttons"><a href="" ><i class="fa-solid fa-user"></i>Profile</a></div>
+                    </div>
+                </div>    
+                <div class="buttons" id="search-bar">
+                    <input type="text" class="input-field" id="searchs"value="Tên sản phẩm" required size="45">
+                    <button class="search" size="35"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="buttons" id="cart"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+            </header>
+            
+              <!-- End header -->
+            <!-- Begin Main section -->
+
+                <!-- Begin slider -->
+            <div class="second-part">
+                <div class="slideshow">
+                    <img class="slider" src="/assets/CSS_in_class/imgs/6.6.jpg"> 
+                    <img src="/assets/CSS_in_class/imgs/10.6.jpg" class="slider" id="second">  
+                    <button id="slider-display-left" class="slide-button" onclick="plusDivs(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button id="slider-display-right" class="slide-button" onclick="plusDivs(+1)"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+            
+                <!-- End slider -->
+
+                <!-- Begin items -->
+            <div class="deals">
+                <div class="deals-for-you">
+                    <h2>Khuyến mãi</h2>
+                </div>
+                <div class="item-container1">
+                    <div class="row1">
+                        <div class="items" onclick="moveTo1()">
+                            <img src="/assets/CSS_in_class/imgs/AGT0006_5.jpg" class="item-img">
+                            <div class="item-des">
+                                <h4 class="name-item">HIPHOP GRAPHIC TEE...</h4>
+                                <div class="item-price-status">
+                                    <h5><u>₫200,000</u></h5>
+                                    <h5>Giảm 43% <i class="fa-solid fa-tag"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items" onclick="moveTo2()">
+                            <img src="/assets/CSS_in_class/imgs/pro_basictee_ABT00011_1-1.jpg" class="item-img">
+                            <div class="item-des">
+                                <h4 class="name-item">BASIC TEE - ANANAS...</h4>
+                                <div class="item-price-status">
+                                    <h5><u>₫150,000</u></h5>
+                                    <h5>Giảm 45% <i class="fa-solid fa-tag"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items" onclick="moveTo3()">
+                            <img src="/assets/CSS_in_class/imgs/Pin-Sac-du-phong-khong-day-OISLE-MP280-8000-DD-1.jpg" class="item-img">
+                            <div class="item-des">
+                                <h4 class="name-item">Pin Dự Phòng Oisle MP280...</h4>
+                                <div class="item-price-status">
+                                    <h5><u>₫1,549,000</u></h5>
+                                    <h5>Giảm 13% <i class="fa-solid fa-tag"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items" onclick="moveTo4()">
+                            <img src="/assets/CSS_in_class/imgs/Ao-khoac-Jean-somi-form-rong-xanh-2-2-ZiZoou-Store.jpg" class="item-img">
+                            <div class="item-des">
+                                <h4 class="name-item">Áo Jean Nam Nữ form rộng...</h4>
+                                <div class="item-price-status">
+                                    <h5><u>₫339,000</u></h5>
+                                    <h5>Giảm 20% <i class="fa-solid fa-tag"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items" onclick="moveTo5()">
+                            <img src="/assets/CSS_in_class/imgs/63896_ban_phim_edra_ek312_trang_brown_sw_usb_led_blue_0002_3.jpg" class="item-img">
+                            <div class="item-des">
+                                <h4 class="name-item">BÀN PHÍM EDRA EK312...</h4>
+                                <div class="item-price-status">
+                                    <h5><u>₫549,000</u></h5>
+                                    <h5>Giảm 39% <i class="fa-solid fa-tag"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="items" onclick="moveTo6()">
+                            <img src="/assets/CSS_in_class/imgs/qua-sinh-nhat-ltn0194.jpg" class="item-img">
+                            <div class="item-des">
+                                <h4 class="name-item">Quà sinh nhật lắc tay bạc nữ...</h4>
+                                <div class="item-price-status">
+                                    <h5><u>₫399,000</u></h5>
+                                    <h5>Giảm 27% <i class="fa-solid fa-tag"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items" onclick="moveTo7()">
+                            <img src="/assets/CSS_in_class/imgs/AV.002817_FEATURE_108328.jpg" class="item-img">
+                            <div class="item-des">
+                                <h4 class="name-item">Smart Tivi LG 4K 65 inch...</h4>
+                                <div class="item-price-status">
+                                    <h5><u>₫12,490,000</u></h5>
+                                    <h5>Giảm 44% <i class="fa-solid fa-tag"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items" onclick="moveTo8()">
+                            <img src="/assets/CSS_in_class/imgs/ao-thun-nam-dai-tay-co-be-adg-11-500x500.jpg" class="item-img">
+                            <div class="item-des">
+                                <h4 class="name-item">Áo thun nam dài tay cổ bẻ ADG...</h4>
+                                <div class="item-price-status">
+                                    <h5><u>₫350,000</u></h5>
+                                    <h5>Giảm 36% <i class="fa-solid fa-tag"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items" onclick="moveTo9()">
+                            <img src="/assets/CSS_in_class/imgs/shopping.jpg" class="item-img">
+                            <div class="item-des">
+                                <h4 class="name-item">1Set 2.4G Wireless Mouse...</h4>
+                                <div class="item-price-status">
+                                    <h5><u>₫215,000</u></h5>
+                                    <h5>Giảm 44% <i class="fa-solid fa-tag"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items" onclick="moveTo10()">
+                            <img src="/assets/CSS_in_class/imgs/khan_choang_co_kc075__2__-_copy_f36acd6bf08c4ad89be0867bf5b8d665_1024x1024.jpg" class="item-img">
+                            <div class="item-des">
+                                <h4 class="name-item">KHĂN QUÀNG CHOÀNG CỔ...</h4>
+                                <div class="item-price-status">
+                                    <h5><u>₫275,000</u></h5>
+                                    <h5>Giảm 18% <i class="fa-solid fa-tag"></i></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="You-might-also-be-interested-in">
+                    <div class="deals-for-you">
+                        <h2>Gợi ý cho bạn</h2>
+                    </div> 
+                    <div class="item-container1">
+                        <div class="row1">
+                            <div class="items" onclick="moveTo11()">
+                                <img src="/assets/CSS_in_class/imgs/3-3.jpg" class="item-img">
+                            <div class="item-des">
+                                <h4 class="name-item">Bàn Phím Cơ K3 Premium...</h4>
+                                <div class="item-price-status">
+                                    <h5><u>₫790,000</u></h5>
+                                    <h5>Free shipping<i class="fa-solid fa-truck-fast"></i></h5>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="items" onclick="moveTo12()">
+                                <img src="/assets/CSS_in_class/imgs/balo-thoi-trang-nam-nu-gb-bl47-2.jpg" class="item-img">
+                            <div class="item-des">
+                                <h4 class="name-item">Balo đi học nam nữ Hàn Quốc...</h4>
+                                <div class="item-price-status">
+                                    <h5><u>₫399,000</u></h5>
+                                    <h5>Free shipping<i class="fa-solid fa-truck-fast"></i></h5>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="items" onclick="moveTo13()">
+                                <img src="/assets/CSS_in_class/imgs/f8bb8192-2615-432f-9c0b-89e569b6edf2.JPG.jpg" class="item-img">
+                            <div class="item-des">
+                                <h4 class="name-item">MechZone 72 Keys Chinese...</h4>
+                                <div class="item-price-status">
+                                    <h5><u>₫692,000</u></h5>
+                                    <h5>Free shipping<i class="fa-solid fa-truck-fast"></i></h5>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="items" onclick="moveTo14()">
+                                <img src="/assets/CSS_in_class/imgs/anh_chup_man_hinh_2022-05-28_luc_12.jpg" class="item-img">
+                            <div class="item-des">
+                                <h4 class="name-item">Cặp Da Công Sở Cao Cấp...</h4>
+                                <div class="item-price-status">
+                                    <h5><u>₫2,390,000</u></h5>
+                                    <h5>Free shipping<i class="fa-solid fa-truck-fast"></i></h5>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="items" onclick="moveTo15()">
+                                <img src="/assets/CSS_in_class/imgs/637702561004066894_00777768-den-ct-1.jpg" class="item-img">
+                            <div class="item-des">
+                                <h4 class="name-item">Loa Bluetooth Xiaomi Mi...</h4>
+                                <div class="item-price-status">
+                                    <h5><u>₫990,000</u></h5>
+                                    <h5>Free shipping<i class="fa-solid fa-truck-fast"></i></h5>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="row2">
+                            <div class="items" onclick="moveTo16()">
+                                <img src="/assets/CSS_in_class/imgs/untitled_139e1f61871144ada71fd799dea77052_master.jpg" class="item-img">
+                            <div class="item-des">
+                                <h4 class="name-item">Tương Ớt Chinsu 250g</h4>
+                                <div class="item-price-status">
+                                    <h5><u>₫17,000</u></h5>
+                                    <h5>Free shipping<i class="fa-solid fa-truck-fast"></i></h5>
+                                </div>
+                            </div>  
+                            </div>
+                            <div class="items" onclick="moveTo17()">
+                                <img src="/assets/CSS_in_class/imgs/images.jpg" class="item-img">
+                            <div class="item-des">
+                                <h4 class="name-item">Combo bánh tráng phơi...</h4>
+                                <div class="item-price-status">
+                                    <h5><u>₫95,000</u></h5>
+                                    <h5>Free shipping<i class="fa-solid fa-truck-fast"></i></h5>
+                                </div>
+                            </div>  
+                            </div>
+                            <div class="items" onclick="moveTo18()">
+                                <img src="/assets/CSS_in_class/imgs/05061051_906f90f684f94a9db292e0c49c940046_master_1.jpg" class="item-img">
+                            <div class="item-des">
+                                <h4 class="name-item">Xúc Xích Vườn Bia La Cusina...</h4>
+                                <div class="item-price-status">
+                                    <h5><u>₫55,000</u></h5>
+                                    <h5>Free shipping<i class="fa-solid fa-truck-fast"></i></h5>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="items" onclick="moveTo19()">
+                                <img src="/assets/CSS_in_class/imgs/fillet-ca-hoi-khay-500g_cbdac3955c814efead334bc6c2ca0f25_master.jpg" class="item-img">
+                            <div class="item-des">
+                                <h4 class="name-item">Fillet Cá Hồi Khay 500g</h4>
+                                <div class="item-price-status">
+                                    <h5><u>₫379,000</u></h5>
+                                    <h5>Free shipping<i class="fa-solid fa-truck-fast"></i></h5>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="items" onclick="moveTo20()">
+                                <img src="/assets/CSS_in_class/imgs/09209909-1_92c2b52c69834d8fbdf1f9863e5bf80c_1b2be1ca90314252b458e833093ba356_master.jpg" class="item-img">
+                            <div class="item-des">
+                                <h4 class="name-item">Gầu Bò Canada 300g</h4>
+                                <div class="item-price-status">
+                                    <h5><u>₫115,000</u></h5>
+                                    <h5>Free shipping<i class="fa-solid fa-truck-fast"></i></h5>
+                                </div>
+                            </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End items -->
+
+            <!-- End main section -->
+  
+  
+              <!-- Begin Footer -->
+              <footer class="footer">
+                <h5>© Generated by Ngo Khoi Nguyen</h5>
+              </footer>
+        </div>
+  </body>
+  </html>
+</body>
+</html>
